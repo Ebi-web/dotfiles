@@ -6,5 +6,5 @@ dotfiles=(.zshrc .p10k.zsh)
 # .zshrcという設定ファイルのシンボリックリンクを
 # ホームディレクトリ直下に作成する
 for file in "${dotfiles[@]}"; do
-        cd && ln -svf "${DOTFILES_DIR}/${file}" "${dotfiles}"
+        cd && ln -svf "${DOTFILES_DIR}/${file}" "${file}"
 done
