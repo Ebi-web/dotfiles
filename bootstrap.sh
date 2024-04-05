@@ -13,9 +13,6 @@ then
     exit
 fi
 
-# zinitのインストール
-sh -c "$(curl --fail --show-error --silent --location https://raw.githubusercontent.com/zdharma-continuum/zinit/HEAD/scripts/install.sh && zinit self-update)"
-
 ./deploy.sh
 
 echo "Zshの設定が完了しました。新しいターミナルセッションを開いて、変更を確認してください。"
